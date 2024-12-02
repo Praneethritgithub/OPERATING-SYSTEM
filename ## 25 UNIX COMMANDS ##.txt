@@ -1,0 +1,124 @@
+1)head: Output the first part of files.
+Syntax: head [OPTION]... [FILE]...
+Description: The head command prints the first 10 lines of each specified file to the terminal. You can specify the number of lines with the -n option.
+Example: head -n 10 file.txt
+
+2)tail: Output the last part of files.
+Syntax: tail [OPTION]... [FILE]...
+Description: The tail command prints the last 10 lines of each specified file to the terminal. You can specify the number of lines with the -n option.
+Example: tail -n 10 file.txt
+
+3)du: Estimate file space usage.
+Syntax: du [OPTION]... [FILE]...
+Description: The du command displays the disk usage of files and directories. Use the -h option to show sizes in human-readable format.
+Example: du -sh *
+
+4)chmod: Change file modes or Access Control Lists.
+Syntax: chmod [OPTION]... MODE[,MODE]... FILE...
+Description: The chmod command changes the file mode (permissions) of each given file according to MODE. Modes can be specified symbolically or numerically.
+Example: chmod 755 script.sh
+
+5)chown: Change file owner and group.
+Syntax: chown [OPTION]... [OWNER][:[GROUP]] FILE...
+Description: The chown command changes the owner and group of each specified file to OWNER and GROUP.
+Example: chown user:group file.txt
+
+6)curl: Transfer data from or to a server.
+Syntax: curl [options] [URL...]
+Description: The curl command is used to transfer data to or from a server, using various protocols such as HTTP, FTP, and more.
+Example: curl http://example.com
+
+7)tar: Archive files.
+Syntax: tar [OPTION]... [FILE]...
+Description: The tar command is used to create and manipulate tar archives. Use -c to create, -x to extract, and -z to compress with gzip.
+Example: tar -czvf archive.tar.gz directory/
+
+8)gzip: Compress files.
+Syntax: gzip [OPTION]... [FILE]...
+Description: The gzip command compresses files using the GNU zip algorithm, replacing the original file with a compressed version.
+Example: gzip file.txt
+
+9)gunzip: Decompress files.
+Syntax: gunzip [OPTION]... [FILE]...
+Description: The gunzip command decompresses files compressed by gzip, restoring the original file.
+Example: gunzip file.txt.gz
+
+10)ssh: OpenSSH SSH client (remote login program).
+Syntax: ssh [user@]hostname
+Description: The ssh command allows you to securely log in to a remote machine and execute commands.
+Example: ssh user@example.com
+
+11)scp: Secure copy (remote file copy program).
+Syntax: scp [OPTION]... [[user@]host1:]file1 [[user@]host2:]file2
+Description: The scp command securely copies files between hosts on a network.
+Example: scp file.txt user@example.com:/home/user/
+
+12)rsync: A fast, versatile, remote (and local) file-copying tool.
+Syntax: rsync [OPTION]... SRC [SRC]... [DEST]
+Description: The rsync command synchronizes files and directories between two locations efficiently.
+Example: rsync -avz /source/ /destination/
+
+13)top: Display Linux tasks.
+Syntax: top
+Description: The top command provides a dynamic, real-time view of running processes, including their resource usage.
+Example: top
+
+14)htop: Interactive process viewer.
+Syntax: htop
+Description: htop is an interactive process viewer for Unix systems, providing a user-friendly interface for monitoring system resources.
+Example: htop
+
+15)kill: Send a signal to a process.
+Syntax: kill [OPTION]... [PID]...
+Description: The kill command sends a signal to a process, typically used to terminate it.
+Example: kill -9 1234
+
+16)killall: Kill processes by name.
+Syntax: killall [OPTION]... [NAME]...
+Description: The killall command kills all processes with the specified name.
+Example: killall firefox
+
+17)bg: Resume a suspended job in the background.
+Syntax: bg [job_spec]
+Description: The bg command resumes a suspended job in the background, allowing it to continue running without blocking the terminal.
+Example: bg %1
+
+18)fg: Bring a job to the foreground.
+Syntax: fg [job_spec]
+Description: The fg command brings a background job to the foreground, making it the active job in the terminal.
+Example: fg %1
+
+19)jobs: List active jobs.
+Syntax: jobs [OPTION]
+Description: The jobs command lists the currently active jobs in the shell.
+Example: jobs
+
+20)df: Report file system disk space usage.
+Syntax: df [OPTION]... [FILE]...
+Description: The df command displays the amount of available disk space for file systems.
+Example: df -h
+
+21)mount: Mount a file system.
+Syntax: mount [OPTION]... DEVICE DIRECTORY
+Description: The mount command attaches a file system to the file system hierarchy at the specified directory.
+Example: mount /dev/sda1 /mnt
+
+22)umount: Unmount file systems.
+Syntax: umount [OPTION]... DIRECTORY | DEVICE
+Description: The umount command detaches a file system from the file system hierarchy.
+Example: umount /mnt
+
+23)alias: Create an alias for a command.
+Syntax: alias name='command'
+Description: The alias command creates a shortcut for a longer command or a series of commands.
+Example: alias ll='ls -la'
+
+24)unalias: Remove alias definitions.
+Syntax: unalias name
+Description: The unalias command removes an alias created by the alias command.
+Example: unalias ll
+
+25)crontab: Schedule periodic background jobs.
+Syntax: crontab [OPTION] [file]
+Description: The crontab command is used to schedule jobs to run at specified times or intervals using the cron daemon.
+Example: crontab -e
